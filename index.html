@@ -1,46 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios</title>
-    <script src="TPGIAN.js"></script>
+
 </head>
 <body>
-    <h2> CONTEO DE VOCALES</h2>
-    <button onclick="contarLetrasVocales()">Vocales</button>
-    <div id="vocales"></div>
-    <h2> UNIR CADENAS</h2>
-    <button onclick="unirCadenas()">unir cadenas</button>
-    <div id="cadenas"></div>
-    <h2> CAMBIAR PALABRAAS</h2>
-    <button onclick="cambiarFrase()">remplaza</button>
-    <div id="reemplazo"></div>
-    <h2>FILTRAR VALORES ALTOS</h2>
-    <button onclick="filtrarValoresAltos()">array</button>
-    <div id="vector"></div> 
-    <h2>CAMBIAR TEXTO</h2>
-    <button onclick="cambiarMensaje()">Texto Inferior</button>
-    <div id="cambiazo">Hey Baby</div>
-    <h2> SUMAR ELEMENTOS DE UN ARRAY</h2>
-    <button onclick="sumarArrays()">sumar array</button>
-    <div id="suma"></div>
-     <h2>SOLO MAYUSCULAS</h2>
-    <button onclick="obtenerMayusculas()">Filtrado</button>
-    <div id="mayus"></div>
-    <h2>BUSCAR SUBCADENA</h2>
-    <button onclick="buscarSubcadena()">subcadena</button>
-    <div id="subcadena"></div>
-     <h2> ORDENAR LISTA DE NOMBRES (CIUDADES)</h2> 
-    <button onclick="ordenarLista()">Ordenar</button>
-    <div id="ordenado"></div>
-    
-    <h2>CALCULAR CUADRADO DE UN NÚMERO</h2>
-    <button onclick="calcularCuadrado()">calcular</button>
-    <p id="cuadrado"></p>
-    
 
-    <h3>no estan en orden, los ejercicios estan desordenados :p</h3>
-    
+    <h1>los diez ejercicios del diablo</h1>
+
+    <div class="contenedor-ejercicio">
+        <h2>1. Cuadrado</h2>
+        <p id="resultado1">Resultado del cuadrado.</p>
+    </div>
+
+    <div class="contenedor-ejercicio">
+        <h2>2. Convertir texto y mostrarlo</h2>
+        <div id="resultado2"></div>
+    </div>
+
+    <div class="contenedor-ejercicio">
+        <h2>3. Filtrar números y crear elementos en el DOM</h2>
+        <div id="resultado3"></div>
+    </div>
+
+    <div class="contenedor-ejercicio">
+        <h2>4. Verificar subcadena y cambiar color</h2>
+        <div id="resultado4">Estado del resultado inicial.</div>
+        <button onclick="verificarSubcadenaYCambiarColor('Programación Web', 'Móvil')">Probar subcadena NO existente</button>
+    </div>
+
+    <div class="contenedor-ejercicio">
+        <h2>5. Unir cadenas y agregar clase</h2>
+        <div id="contenedor5"></div>
+    </div>
+
+    <div class="contenedor-ejercicio">
+        <h2>6. Sumar array</h2>
+        <div id="resultado6"></div>
+    </div>
+
+    <div class="contenedor-ejercicio">
+        <h2>7. Filtrar + mayúsculas </h2>
+        <div id="resultado7"></div>
+    </div>
+
+    <div class="contenedor-ejercicio">
+        <h2>8. Contar vocales y cambiar tamaño</h2>
+        <div id="resultado8"></div>
+        <button onclick="contarVocalesYMostrar('Solo dos vocales')">Probar texto corto (Cambio de tamaño)</button>
+    </div>
+
+    <div class="contenedor-ejercicio">
+        <h2>9. Reemplazar palabra y mostrar resultado</h2>
+        <div id="resultado9"></div>
+        <button onclick="reemplazarPalabraYMostrar('Este es un buen día, un día soleado.', 'día', 'momento')">Realizar otro reemplazo</button>
+    </div>
+
+    <div class="contenedor-ejercicio">
+        <h2>10. Ordenar, unir y alternar clase</h2>
+        <div id="resultado10"></div>
+        <button onclick="ordenarUnirYMostrar()">Alternar Clase "destacado"</button>
+    </div>
+
+    <script src="ejercicios.js"></script> 
+
 </body>
 </html>
